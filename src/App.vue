@@ -22,6 +22,7 @@ watch(pageSize, (newSize) => {
       <div id="flashMessage" class="animation-fade" v-if="message">
         <h4>{{ message }}</h4>
       </div>
+      <h1>Deploy with Vercel</h1>
       <div class="wrapper">
         <nav>
           <RouterLink
@@ -37,8 +38,7 @@ watch(pageSize, (newSize) => {
             :to="{ name: 'about' }"
             >About</RouterLink
           >
-          |
-          <RouterLink :to="{ name: 'student' }">Student</RouterLink>
+         
         </nav>
         <div>
           <label for="pageSize">Page Size:</label>
