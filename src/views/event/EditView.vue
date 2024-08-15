@@ -12,8 +12,8 @@ const props = defineProps<{
 const { event } = toRefs(props)
 const router = useRouter()
 const store = useMessageStore()
-const register = () => {
-  store.updateMessage('You are successufily registered for' + props.event.title)
+const edit = () => {
+  store.updateMessage('You are successufily edit for' + props.event.title)
   setTimeout(() => {
     store.resetMessage()
   }, 3000)
@@ -22,7 +22,7 @@ const register = () => {
 </script>
 <template>
   <div class="flex flex-col items-center">
-  <p>Register event here</p>
-  <button @click="register">Register</button>
-</div>
+    <p>Edit event here</p>
+    <button @click="edit">Edit</button>
+  </div>
 </template>

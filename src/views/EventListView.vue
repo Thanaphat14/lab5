@@ -40,8 +40,7 @@ onMounted(() => {
 </script>
 
 <template>
-  
-  <div class="flex flex-col items-center"> 
+  <div class="flex flex-col items-center">
     <h1>Events For Good</h1>
     <EventCard v-for="event in events" :key="event.id" :event="event" />
     <EventDetail v-for="event in events" :key="event.id" :event="event" />
@@ -63,4 +62,3 @@ onMounted(() => {
     </div>
   </div>
 </template>
-

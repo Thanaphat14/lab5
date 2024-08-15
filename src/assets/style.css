@@ -44,16 +44,14 @@ h2 {
   @apply text-[20px]; /* Tailwind utility for specific font size */
 }
 
-
 @keyframes yellofade {
-    from {
-      background-color: yellow;
-    }
-    to {
-      background-color: transparent;
-    }
+  from {
+    background-color: yellow;
   }
-  #flashMessage {
-    animation: yellofade 3s ease-in-out;
+  to {
+    background-color: transparent;
   }
-
+}
+#flashMessage {
+  animation: yellofade 3s ease-in-out;
+}

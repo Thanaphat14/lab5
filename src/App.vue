@@ -24,10 +24,20 @@ watch(pageSize, (newSize) => {
       </div>
       <div class="wrapper">
         <nav>
-          <RouterLink class="font-bold text-gray-700" 
-          exact-active-class="text-green-500" :to="{ name: 'event-list-view' }">Event</RouterLink> |
-          <RouterLink class="font-bold text-gray-700" 
-          exact-active-class="text-green-500" :to="{ name: 'about' }">About</RouterLink> |
+          <RouterLink
+            class="font-bold text-gray-700"
+            exact-active-class="text-green-500"
+            :to="{ name: 'event-list-view' }"
+            >Event</RouterLink
+          >
+          |
+          <RouterLink
+            class="font-bold text-gray-700"
+            exact-active-class="text-green-500"
+            :to="{ name: 'about' }"
+            >About</RouterLink
+          >
+          |
           <RouterLink :to="{ name: 'student' }">Student</RouterLink>
         </nav>
         <div>
@@ -43,5 +53,3 @@ watch(pageSize, (newSize) => {
     <RouterView />
   </div>
 </template>
-
-
