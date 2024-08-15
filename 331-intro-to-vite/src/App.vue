@@ -17,7 +17,7 @@ watch(pageSize, (newSize) => {
 </script>
 
 <template>
-  <div id="layout">
+  <div id="text-center font-sans text-gray-700 antialias">
     <header>
       <div id="flashMessage" v-if="message">
         <h4>{{ message }}</h4>
@@ -44,13 +44,6 @@ watch(pageSize, (newSize) => {
 </template>
 
 <style>
-#layout {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  text-align: center;
-  color: #2c3e50;
-}
-
 nav {
   padding: 30px;
 }
