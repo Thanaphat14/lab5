@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { SpeedInsights } from "@vercel/speed-insights/vue"
 import { RouterLink, RouterView, useRoute, useRouter } from 'vue-router'
 import { ref, watch } from 'vue'
 import { useMessageStore } from './stores/message'
