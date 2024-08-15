@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { useEventStore } from '@/stores/event'
 import { storeToRefs } from 'pinia'
-import { resourceLimits } from 'worker_threads'
+
 
 const store = useEventStore()
 const { event } = storeToRefs(store)
