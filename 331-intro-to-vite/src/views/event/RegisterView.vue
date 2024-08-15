@@ -21,6 +21,8 @@ const register = () => {
 }
 </script>
 <template>
+  <div class="flex flex-col items-center">
   <p>Register event here</p>
   <button @click="register">Register</button>
+</div>
 </template>

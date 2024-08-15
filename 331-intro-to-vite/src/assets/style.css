@@ -1,3 +1,59 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Tailwind utilities applied */
+h1 {
+  @apply text-4xl mb-8;
+}
+
+.pagination {
+  @apply flex w-[290px];
+}
+
+.pagination a {
+  @apply flex-1 text-[#2c3e50] no-underline;
+}
+
+#page-prev {
+  @apply text-left;
+}
+
+#page-next {
+  @apply text-right;
+}
+
+nav {
+  @apply p-8; /* Adjusting padding to Tailwind spacing scale */
+}
+
+nav a {
+  @apply font-bold text-[#2c3e50];
+}
+
+nav a:first-of-type {
+  @apply border-0; /* Tailwind utility for border removal */
+}
+
+nav a.router-link-exact-active {
+  @apply text-[#42b983];
+}
+
+/* Custom styles for h2 */
+h2 {
+  @apply text-[20px]; /* Tailwind utility for specific font size */
+}
+
+
+@keyframes yellofade {
+    from {
+      background-color: yellow;
+    }
+    to {
+      background-color: transparent;
+    }
+  }
+  #flashMessage {
+    animation: yellofade 3s ease-in-out;
+  }
+

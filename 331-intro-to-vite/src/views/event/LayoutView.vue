@@ -7,6 +7,7 @@ const store = useEventStore()
 const { event } = storeToRefs(store)
 </script>
 <template>
+  
   <div v-if="event">
     <h1>{{ event.title }}</h1>
     <nav>

@@ -21,6 +21,8 @@ const edit = () => {
 }
 </script>
 <template>
+  <div class="flex flex-col items-center">
   <p>Edit event here</p>
   <button @click="edit">Edit</button>
+</div>
 </template>
